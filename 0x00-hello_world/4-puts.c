@@ -1,7 +1,13 @@
-# include <stdio.h>
-/*print programming is like building a mulitilingual puzzle*/
+#include <stdio.h>
+
+/**
+* main - print the string in the puts function
+*
+* Description: using the main function
+* Then prints: "programming is like building a multilingual puzzle
+*/
 int main(void)
-{	
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
-}	
+{
+        put("\programming is like building a multilingual puzzle");
+        return (0)
+}
