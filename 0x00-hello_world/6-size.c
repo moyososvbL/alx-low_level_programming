@@ -1,21 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - prints the size of various types on the computer it is compiled and run on
- *
- * Return:0
- */
+* main - print the sizeof many var type
+*
+* Return: 0
+*/
 int main(void)
 {
+char a;
+int b;
+long int c;
+long long int d;
+float e;
 
-	int myInt;
-	float myFloat;
-	double myDouble;
-	char myChar;
-
-	printf("%lu\n", sizeof(myInt));
-	printf("%lu\n", sizeof(myFloat));
-	printf("%lu\n", sizeof(myDouble));
-	printf("%lu\n", sizeof(myChar));
-	return (0);
-}
+printf("Size of a char: %d byte(s)\n", sizeof(a));
+printf("Size of an int: %d byte(s)\n", sizeof(b));
+printf("Size of a long int: %d byte(s)\n", sizeof(c));
+printf("Size of a long long int: %d byte(s)\n", sizeof(d));
+print ("Size of a float: %d byte(s)\n", sizeof(e));
+return (0);
+}	
