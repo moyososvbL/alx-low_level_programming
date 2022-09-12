@@ -23,7 +23,7 @@ int main(void)
 
 		continue;
 
-	putchat(',');
+	putchar(',');
 	putchar(' ');
 
 
