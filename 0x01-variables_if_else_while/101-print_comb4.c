@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main- print all possibe commbination of three different digit 
+ * main- print all possibe commbination of three different digit
  *
  * Return: 0
  */
@@ -12,7 +12,7 @@ int main(void)
 
 	for (digit1 = 0; digit1 < 8; digit1++)
 {
-	for (digit2 = digit1 +1; digit2 < 9; digit2++)
+	for (digit2 = digit1 + 1; digit2 < 9; digit2++)
 {
 	for (digit3 = digit2 + 1; digit3 < 10; digit3++)
 {
@@ -26,7 +26,7 @@ int main(void)
 
 	putchar(',');
 	putchar(' ');
-	
+
 		}
 	}
 }
@@ -35,4 +35,4 @@ putchar('\n');
 return (0);
 
 }
-	
+
