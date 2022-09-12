@@ -23,14 +23,15 @@ int main(void)
 
 		continue;
 
-	putchat(',')
-	putchar(' ')
+	putchat(',');
+	putchar(' ');
+
 
 	}
 
 }
 
-putchar('\n')
-return (0)
+putchar('\n');
+return (0);
 
 }
