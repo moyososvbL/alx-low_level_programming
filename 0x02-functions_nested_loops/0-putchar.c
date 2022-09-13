@@ -1,7 +1,7 @@
-#include <main.h>
+#include "moyososvbL.h"
 
 /**
- * main - Write a program that prints _putchar, followed by a new line
+ * main - prints "moyososvbL" followed by a new line
  *
  * Return: 0
  */
