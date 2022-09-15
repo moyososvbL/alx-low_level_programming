@@ -3,7 +3,7 @@
 /**
  * print_times_table - prints the times table for n.
  * @n: The multiplication table requested.
- * Return: Nothing.
+ * Return: 0
  */
 void print_times_table(int n)
 {
@@ -41,5 +41,6 @@ if (!(n > 15 || n < 0))
 
 		_putchar('\n');
 	}
+	return (0);
 }
 }
