@@ -1,13 +1,9 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MAIN_H_INCLUDED
+#define MAIN_H_INCLUDED
 
-/**
-* File: main.h
-* Auth: MoyososvbL
-* Desc: Header file containing prototypes for all functions 
-*/
+#include <stdio.h>
 
-int _putchar(char c);
+int _putcha(char c);
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
