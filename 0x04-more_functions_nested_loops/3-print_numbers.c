@@ -2,7 +2,7 @@
 
 /**
 * print_numbers - checks for a digit (0 through 9)
-* Return: 0
+* Return: nothing
 */
 
 void print_numbers(void)
@@ -15,5 +15,5 @@ void print_numbers(void)
 		_putchar(1);
 	}
 
-		_putchar("\n");
+		_putchar('\n');
 }
