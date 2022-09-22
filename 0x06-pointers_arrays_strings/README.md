@@ -1,1 +1,1 @@
-pointer_array_strings
+pointer and arrays
