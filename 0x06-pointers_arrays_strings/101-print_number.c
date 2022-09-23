@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * print_number - print an integer
+ * print_number - function to print int using putchar
  * @num: int to print
+ * Return: void
  */
 
 void print_number(int num)
@@ -11,13 +12,13 @@ void print_number(int num)
 
 	if (num < 0)
 	{
-		_putchar('-');
+		putchar('-');
 		num *= -1;
 	}
 	n = num;
 	if (n < d)
 	{
-		_putchar('0' + n);
+		putchar('0' + n);
 	}
 	else
 	{
@@ -31,12 +32,12 @@ void print_number(int num)
 		if (!(d >= 1000000000) || n > 100000000)
 		if (!(d == 1000000000) || n == 123456789)
 			d /= 10;
-		_putchar('0' + n / d);
+		putchar('0' + n / d);
 		while (d != 10)
 		{
 			d /= 10;
-			_putchar('0' + (n / d) % 10);
+			putchar('0' + (n / d) % 10);
 		}
-		_putchar('0' + n % 10);
+		putchar('0' + n % 10);
 	}
 }
