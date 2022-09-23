@@ -1,21 +1,43 @@
 #include "main.h"
 
 /**
- * print_number - Prints an integer.
- * @n: The integer to be printed.
+ * print_number - prints an integer
+ * @num: int to print
+ * Return: void
  */
-void print_number(int n)
+
+void print_number(int num)
 {
-	unsigned int num = n;
+	unsigned int d = 10, n;
 
-	if (n < 0)
+	if (num < 0)
 	{
-		putchar('-');
-		num = -num;
+		_putchar('-');
+		num *= -1;
 	}
-
-	if ((num / 10) > 0)
-		print_number(num / 10);
-
-	putchar((num % 10) + '0');
+	n = num;
+	if (n < d)
+	{
+		_putchar('0' + n);
+	}
+	else
+	{
+		while (n >= d)
+		{
+			d *= 10;
+			if (d >= 1000000000)
+			if (d == 1000000000)
+				break;
+		}
+		if (!(d >= 1000000000) || n > 100000000)
+		if (!(d == 1000000000) || n == 123456789)
+			d /= 10;
+		_putchar('0' + n / d);
+		while (d != 10)
+		{
+			d /= 10;
+			_putchar('0' + (n / d) % 10);
+		}
+		_putchar('0' + n % 10);
+	}
 }
