@@ -3,23 +3,19 @@
 /**
  * print_number - Prints an integer.
  * @n: The integer to be printed.
- *
- * Return: Nothing
  */
 void print_number(int n)
 {
-	unsigned int x;
+	unsigned int num = n;
 
 	if (n < 0)
 	{
 		putchar('-');
-		n *= -1;
+		num = -num;
 	}
 
-	x = n;
+	if ((num / 10) > 0)
+		print_number(num / 10);
 
-	if ((x / 10) > 0)
-		print_number(x / 10);
-
-	putchar((x % 10) + '0');
+	putchar((num % 10) + '0');
 }
