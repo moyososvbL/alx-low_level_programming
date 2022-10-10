@@ -3,7 +3,7 @@
 
 /**
  * struct dog - dog file
- * @name: The name of the dog 
+ * @name: The name of the dog
  * @age: The age of the dog
  * @owner: The owner
  *
