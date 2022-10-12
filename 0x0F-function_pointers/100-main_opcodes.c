@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - Printing the opcodes 
+ * main - Printing the opcodes
  * @argc: The number of arguments
  * @argv: An array of pointers to the arguments.
  *
