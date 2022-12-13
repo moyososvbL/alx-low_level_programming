@@ -1,7 +1,11 @@
-# Access your C code
-from ctypes import *
-so_file = "./100-operations.so"
-100-operations = CDLL(so_file)
+import random
+import ctypes
 
-# Use your C code
-100-atoi._atoi(char *s)
+cops = ctypes.CDLL('./100-operations.so')
+a = random.randint(-111, 111)
+b = random.randint(-111, 111)
+print("{} + {} = {}".format(a, b, cops.add(a, b)))
+print("{} - {} = {}".format(a, b, cops.sub(a, b)))
+print("{} x {} = {}".format(a, b, cops.mul(a, b)))
+print("{} / {} = {}".format(a, b, cops.div(a, b)))
+print("{} % {} = {}".format(a, b, cops.mod(a, b)))
